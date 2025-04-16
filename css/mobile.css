@@ -1,0 +1,55 @@
+@media only screen and (max-width: 1023px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav .side:first-child{
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav .side:last-child{
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    nav .side:first-child {
+        flex-direction: column;
+    }
+
+    nav #searchBar {
+        margin-bottom: 10px;
+    }
+
+    nav #help #options{
+        left: auto;
+        right: 0;
+        transform: translate(0, 0);
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    #arrowLeft, #arrowRight {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    footer{
+        height: 300px;;
+    }
+    
+    footer .side{
+        width: 40%;
+        height: 50%;
+    }
+
+    footer .side:last-child{
+        width: 60%;
+    }
+
+    footer .side:first-child{
+        width: 100%;
+    }
+}
