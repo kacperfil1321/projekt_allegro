@@ -3,29 +3,41 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<title>Document</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/mobile.css" />
+		<title>Allegro</title>
 	</head>
 	<body>
-		<div id="mainMenu">
+		<nav>
 			<div class="side">
-				<img id="logo" src="img/logo_allegro.png" alt="logo" />
-				<img id="help" src="img/pomoc.png" alt="Pomoc" />
+				<div class="imgs">
+					<img id="logo" width="250px" src="img/logo_allegro.png" alt="logo" />
+					<div id="help">
+						<img id="helpImg" width="60px" src="img/accessibility.png" alt="Pomoc" />
+						<div id="options">
+							<img width="32px" src="img/text_increase.png" alt="Mała czcionka">
+							<img width="44px" src="img/text_increase.png" alt="Średnia czcionka">
+							<img width="56px" src="img/text_increase.png" alt="Duża czcionka">
+							<img src="img/high_contrast.png" alt="Wysoki kontrast">
+							<img src="img/noraml_contrast.png" alt="Normalny kontrast">
+						</div>
+					</div>
+				</div>
 				<div id="searchBar">
 					<input type="text" placeholder="czego szukasz?" />
-					<img src="img/lupa.png" alt="szukaj" />
+					<img width="32px" src="img/search.png" alt="szukaj" />
 				</div>
 			</div>
 			<div class="side">
 				<div id="categories">Kategorie</div>
 				<div id="search">Szukaj</div>
 				<div id="menuIcons">
-					<img src="img/profil.png" alt="Konto" />
-					<img src="img/koszyk.png" alt="Koszyk" />
-					<img src="img/serce.png" alt="Ulubione" />
+					<img width="32px" src="img/account.png" alt="Konto" />
+					<img width="32px" src="img/shopping_cart.png" alt="Koszyk" />
+					<img width="32px" src="img/favorite.png" alt="Ulubione" />
 				</div>
 			</div>
-		</div>
+		</nav>
 
 		<div id="menu">
 			<div class="link">Allegro Days -40%</div>
@@ -34,47 +46,57 @@
 			<div class="link">Sprzedawaj na Allegro</div>
 		</div>
 
-		<div id="slider"></div>
-
 		<div id="menuCategories">
-			<a href="#" class="categorie">
-				<div class="img">
-					<img src="img/auto.png" alt="Motoryzacja" />
-				</div>
-				<span>Motoryzacja</span>
-			</a>
-			<a href="#" class="categorie">
-				<div class="img">
-					<img src="img/zegarek.png" alt="Moda" />
-				</div>
-				<span>Moda</span>
-			</a>
-			<a href="#" class="categorie">
-				<div class="img">
-					<img src="img/x-wing.png" alt="Dziecko" />
-				</div>
-				<span>Dziecko</span>
-			</a>
-			<a href="#" class="categorie">
-				<div class="img">
-					<img src="img/krem.png" alt="Uroda" />
-				</div>
-				<span>Uroda</span>
-			</a>
-			<a href="#" class="categorie">
-				<div class="img">
-					<img src="img/monitor.png" alt="Elektronika" />
-				</div>
-				<span>Elektronika</span>
-			</a>
-			<a href="#" class="categorie">
-				<div class="img">
-					<img src="img/pilka.png" alt="Sport" />
-				</div>
-				<span>Sport</span>
-			</a>
+			<h1>Kategorie</h1>
+			<div id="arrowLeft">
+				<img src="img/arrowLeft.png" width="50px" alt="Strzałka w lewo">
+			</div>
+
+			<div id="categoriesSlider">
+				<a href="#" class="categorie">
+					<div class="img">
+						<img src="img/auto.png" alt="Motoryzacja" />
+					</div>
+					<span>Motoryzacja</span>
+				</a>
+				<a href="#" class="categorie">
+					<div class="img">
+						<img src="img/zegarek.png" alt="Moda" />
+					</div>
+					<span>Moda</span>
+				</a>
+				<a href="#" class="categorie">
+					<div class="img">
+						<img src="img/x-wing.png" alt="Dziecko" />
+					</div>
+					<span>Dziecko</span>
+				</a>
+				<a href="#" class="categorie">
+					<div class="img">
+						<img src="img/krem.png" alt="Uroda" />
+					</div>
+					<span>Uroda</span>
+				</a>
+				<a href="#" class="categorie">
+					<div class="img">
+						<img src="img/monitor.png" alt="Elektronika" />
+					</div>
+					<span>Elektronika</span>
+				</a>
+				<a href="#" class="categorie">
+					<div class="img">
+						<img src="img/pilka.png" alt="Sport" />
+					</div>
+					<span>Sport</span>
+				</a>
+			</div>
+
+			<div id="arrowRight">
+				<img src="img/arrowRight.png" width="50px" alt="Strzałka w prawo">
+			</div>
 		</div>
 
+		<h1>Produkty</h1>
 		<div class="products">
 			<a href="#" class="product">
 				<div class="img">
@@ -153,6 +175,35 @@
 			</a>
 		</div>
 
-		<footer></footer>
+		<footer>
+			<div class="side">
+				<img width="250px" src="img/logo_allegro.png" alt="logo" />
+			</div>
+			<div class="side">
+				<p>Pomoc</p>
+				<p>O nas</p>
+				<p>Regulamin</p>
+				<p>Polityka prywatności</p>
+			</div>
+			<div class="side">
+				<p>Social Media</p>
+				<div id="socialMediaImgs">
+					<a href="#">
+						<img src="img/facebook.png" alt="Facebook" />
+					</a>
+					<a href="#">
+						<img src="img/x.png" alt="X" />
+					</a>
+					<a href="#">
+						<img src="img/tikTok.png" alt="TikTok" />
+					</a>
+					<a href="#">
+						<img src="img/youtube.png" alt="Youtube" />
+					</a>
+				</div>
+			</div>
+		</footer>
+		<script src="js/categoriesSlider.js"></script>
+		<script src="js/accesibilityOptions.js"></script>
 	</body>
 </html>
