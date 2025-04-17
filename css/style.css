@@ -10,11 +10,12 @@
 }
 
 body {
+	min-width: 320px;
 	width: 100%;
 	background-color: #2d2d2d;
 }
 
-h1{
+h1 {
 	color: white;
 	text-align: center;
 	margin: 20px 0;
@@ -45,7 +46,7 @@ nav .side:last-child {
 	width: 406px;
 }
 
-nav .side .imgs{
+nav .side .imgs {
 	display: flex;
 	align-items: center;
 }
@@ -54,7 +55,7 @@ nav #logo {
 	margin: 0 30px;
 }
 
-nav #help{
+nav #help {
 	position: relative;
 }
 
@@ -67,7 +68,7 @@ nav #help #helpImg {
 	margin-right: 30px;
 }
 
-nav #help #options{
+nav #help #options {
 	display: none;
 	position: absolute;
 	background-color: #666666;
@@ -81,7 +82,7 @@ nav #help #options{
 	align-items: flex-end;
 }
 
-nav #help #options img{
+nav #help #options img {
 	cursor: pointer;
 }
 
@@ -111,6 +112,10 @@ nav #searchBar img {
 	padding-right: 10px;
 }
 
+nav .side .links {
+	display: flex;
+}
+
 nav #categories,
 nav #search {
 	width: 130px;
@@ -123,6 +128,13 @@ nav #search {
 	align-items: center;
 	cursor: pointer;
 	margin: 0 5px;
+	transition-duration: 0.3s;
+}
+
+nav #categories:hover,
+nav #search:hover {
+	opacity: 0.7;
+	transition-duration: 0.3s;
 }
 
 nav #menuIcons {
@@ -134,19 +146,26 @@ nav #menuIcons {
 
 nav #menuIcons img {
 	margin: 0 5px;
+	transition-duration: 0.3s;
+}
+
+nav #menuIcons img:hover {
+	transform: scale(1.15);
+	transition-duration: 0.3s;
 }
 
 #menu {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	padding: 10px 0;
 	border-bottom: solid #181818 10px;
 }
 
 #menu .link {
 	padding: 10px;
-	margin: 0 10px;
+	margin: 5px 10px;
 	border: solid #ff5800 5px;
 	color: white;
 	border-radius: 10px;
@@ -159,7 +178,7 @@ nav #menuIcons img {
 	transition-duration: 0.3s;
 }
 
-#menuCategories{
+#menuCategories {
 	position: relative;
 	border-bottom: solid #181818 10px;
 }
@@ -173,7 +192,8 @@ nav #menuIcons img {
 	overflow-x: hidden;
 }
 
-#arrowLeft, #arrowRight {
+#arrowLeft,
+#arrowRight {
 	display: none;
 	width: 50px;
 	height: 50px;
@@ -193,7 +213,8 @@ nav #menuIcons img {
 	right: 5px;
 }
 
-#arrowLeft:hover, #arrowRight:hover {
+#arrowLeft:hover,
+#arrowRight:hover {
 	opacity: 1;
 	transition-duration: 0.3s;
 }
@@ -256,13 +277,13 @@ nav #menuIcons img {
 	color: white;
 }
 
-footer{
+footer {
 	background-color: #ff5800;
 	height: 200px;
 	font-size: 18px;
 }
 
-footer .side{
+footer .side {
 	float: left;
 	width: calc(100% / 3);
 	height: 100%;
@@ -272,29 +293,36 @@ footer .side{
 	flex-direction: column;
 }
 
-footer .side:nth-child(2) p{
+footer .side:nth-child(2) p {
 	margin-bottom: 5px;
+	text-align: center;
 	cursor: pointer;
 }
 
-footer .side:nth-child(2) p:hover{
+footer .side:nth-child(2) p:hover {
 	text-decoration: underline;
 }
 
-footer .side:last-child p{
+footer .side:last-child p {
 	font-size: 26px;
 	font-weight: bold;
 	color: white;
 	margin-bottom: 20px;
 }
 
-footer #socialMediaImgs img{
+footer #socialMediaImgs {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+footer #socialMediaImgs img {
 	margin: 0 10px;
 	cursor: pointer;
 	transition-duration: 0.3s;
 }
 
-footer #socialMediaImgs img:hover{
+footer #socialMediaImgs img:hover {
 	transform: scale(1.2);
 	transition-duration: 0.3s;
 }
