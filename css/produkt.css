@@ -1,0 +1,116 @@
+main {
+    min-height: calc(100vh - 333px);
+}
+
+main #productTitle {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding: 15px 0;
+    border-bottom: 15px solid #ff5800;
+}
+
+main #productDetails {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px 20px;
+    border-bottom: 15px solid #ff5800;
+}
+
+main #productDetails img {
+    background-color: white;
+    width: 250px;
+    margin: 0 10px;
+}
+
+main #productDetails #productDetailsCenter {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+main #productDetails #productDetailsCenter span {
+    color: #E1FF01;
+}
+
+main #productDetails #productDetailsCenter #productPrice {
+    background-color: #ff5800;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+main #productDetails #productDetailsRight {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+main #productDetails #productDetailsRight button { 
+    border: solid #ff5800 3px;
+    border-radius: 10px;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+main #productDetails #productDetailsRight button:hover {
+    background-color: #ff5800;
+    transition-duration: 0.3s;
+}
+
+main #productDescription {
+    padding: 25px;
+    color: white;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 850px) {
+    main #productTitle {
+        font-size: 28px;
+    }
+
+    main #productDetails #productDetailsCenter {
+        font-size: 18px;
+    }
+
+    main #productDetails #productDetailsRight {
+        font-size: 18px;
+    }
+    
+    main #productDetails #productDetailsRight button {
+        font-size: 18px;
+    }
+
+    main #productDescription {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    main #productDetails {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main #productDetails img {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    main #productDetails #productDetailsCenter {
+        margin-bottom: 10px;
+    }
+}
